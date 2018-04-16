@@ -19,40 +19,25 @@ SidebarMenu.props = {
 
 SidebarMenu.defaultProps = {
   groups: [{
-    links: [{
-      name: 'Home',
-      url: 'http://example.com',
-      links: [{
-        name: 'Activity',
-        url: 'http://msn.com'
-      }, {
-        name: 'News',
-        url: 'http://msn.com'
-      }],
-      isExpanded: true
-    }, {
-      name: 'Documents',
-      url: 'http://example.com',
-      isExpanded: true
-    }, {
-      name: 'Pages',
-      url: 'http://msn.com'
-    }, {
-      name: 'Notebook',
-      url: 'http://msn.com'
-    }, {
-      name: 'Long Name Test for elipsis. Longer than 12em!',
-      url: 'http://example.com'
-    }, {
-      name: 'Edit Link',
-      url: 'http://example.com',
-      iconClassName: 'ms-Icon--Edit'
-    }, {
-      name: 'Edit',
-      url: '#',
-      icon: 'Edit',
-      onClick: () => { }
-    }]
+    links: [
+      {
+        name: 'Parent link', url: 'http://example.com', links: [
+          { name: 'Child link', url: 'http://example.com' },
+          {
+            name: 'Child link', url: 'http://example.com', links: [
+              { name: 'Child link', url: 'http://example.com' },
+              { name: 'Child link', url: 'http://example.com' }
+            ]
+          },
+          { name: 'Child link', url: 'http://example.com' }
+        ]
+      },
+      {
+        name: 'Parent link', url: 'http://example.com', links: [
+          { name: 'Child link', url: 'http://example.com' }
+        ]
+      }
+    ]
   }],
   expanded: 'expanded',
   collapsed: 'collapsed'
