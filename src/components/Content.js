@@ -1,4 +1,5 @@
-import React, { PropTypes as T } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import { Breadcrumb, IBreadcrumbItem } from 'office-ui-fabric-react/lib/Breadcrumb';
 import { CommandBar } from 'office-ui-fabric-react/lib/CommandBar';
 import { IContextualMenuItem } from 'office-ui-fabric-react/lib/ContextualMenu';
@@ -70,10 +71,10 @@ class Content extends React.Component {
 }
 
 Content.propTypes = {
-  items: T.arrayOf(T.shape(IBreadcrumbItem)),
-  menuItems: T.arrayOf(T.shape(IContextualMenuItem)),
-  farMenuItems: T.arrayOf(T.shape(IContextualMenuItem)),
-  maxBreadcrumbs: T.number
+  items: PropTypes.arrayOf(PropTypes.shape(IBreadcrumbItem)),
+  menuItems: PropTypes.arrayOf(PropTypes.shape(IContextualMenuItem)),
+  farMenuItems: PropTypes.arrayOf(PropTypes.shape(IContextualMenuItem)),
+  maxBreadcrumbs: PropTypes.number
 };
 
 Content.defaultProps = {

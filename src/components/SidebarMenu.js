@@ -1,4 +1,5 @@
-import React, { PropTypes as T } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import { Nav, INavLinkGroup } from 'office-ui-fabric-react/lib/Nav';
 
 const SidebarMenu = ({ groups, expanded, collapsed }) => (
@@ -12,8 +13,8 @@ const SidebarMenu = ({ groups, expanded, collapsed }) => (
 
 SidebarMenu.props = {
   groups: INavLinkGroup,
-  expanded: T.string,
-  collapsed: T.string
+  expanded: PropTypes.string,
+  collapsed: PropTypes.string
 };
 
 SidebarMenu.defaultProps = {

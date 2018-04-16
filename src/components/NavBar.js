@@ -1,4 +1,5 @@
-import React, { PropTypes as T } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import { SearchBox } from 'office-ui-fabric-react/lib/SearchBox';
 import '../_styles/NavBar.css';
 
@@ -17,8 +18,8 @@ const NavBar = ({ onChange, onSearch }) => (
 );
 
 NavBar.propTypes = {
-  onChange: T.func,
-  onSearch: T.func
+  onChange: PropTypes.func,
+  onSearch: PropTypes.func
 };
 
 NavBar.defaultProps = {
