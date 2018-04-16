@@ -1,4 +1,4 @@
-import {identity} from '../utils/'
+import { identity } from '../utils/';
 
 export const menuItems = [{
   key: 'newItem',
@@ -9,23 +9,23 @@ export const menuItems = [{
     key: 'selectionModeNone',
     name: 'None',
     canCheck: true,
-    checked: false,
+    checked: false
   }, {
     key: 'selectionModeSingle',
     name: 'Single Mode',
     canCheck: true,
-    checked: true,
+    checked: true
   }, {
     key: 'selectionModeMulti',
     name: 'Multi Mode',
     canCheck: true,
-    checked: false,
+    checked: false
   }]
 }, {
   key: 'upload',
   name: 'Upload',
   icon: 'Upload',
-  onClick: identity,
+  onClick: identity
 }, {
   key: 'share',
   name: 'Share',
@@ -45,19 +45,19 @@ export const menuItems = [{
   key: 'copy',
   name: 'Copy to...',
   icon: 'Copy',
-  onClick:identity
+  onClick: identity
 }, {
   key: 'rename',
   name: 'Rename...',
   icon: 'Edit',
-  onClick:identity
+  onClick: identity
 }, {
   key: 'disabled',
   name: 'Disabled...',
   icon: 'Cancel',
   disabled: true,
-  onClick:identity
-}]
+  onClick: identity
+}];
 
 export const farMenuItems = [{
   key: 'sort',
@@ -74,4 +74,4 @@ export const farMenuItems = [{
   name: 'Info',
   icon: 'Info',
   onClick: identity
-}]
+}];
