@@ -4,7 +4,7 @@ This is the sample used to showcase some of the components of [Office UI Fabric]
 
 It is a very simple React application built with [create-react-app](https://github.com/facebookincubator/create-react-app).
 
-You can find the medium article [here](medium.com).
+You can find the medium article [here](https://medium.com/@gmonne/simple-app-layout-with-office-ui-fabric-react-2eac6361e1b4).
 
 ---
 
